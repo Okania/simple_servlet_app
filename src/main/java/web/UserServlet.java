@@ -41,6 +41,9 @@ public class UserServlet extends HttpServlet{
 			e.printStackTrace();
 		}
 		
+		res.sendRedirect("confirm.jsp");
+	
+		
 		
 		
 		
