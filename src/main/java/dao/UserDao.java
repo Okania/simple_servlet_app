@@ -21,13 +21,14 @@ public class UserDao {
     	try {
     		Connection connection = DriverManager.getConnection(URL,USER,PASSWORD);
     		
-    		PreparedStatement statement = connection.prepareStatement("insert into users values(?,?,?,?,?)");
-			
-    		statement.setString(1, user.getFname());
-    		statement.setString(2, user.getLname());
-    		statement.setString(3, user.getUsername());
-    		statement.setString(1, user.getPassword());
-    		statement.setInt(1, user.getAge());
+    		PreparedStatement statement = connection.prepareStatement("insert into users values(?,?,?,?,?,?)");
+    		
+			statement.setString(1, null);
+    		statement.setString(2, user.getFname());
+    		statement.setString(3, user.getLname());
+    		statement.setString(4, user.getUsername());
+    		statement.setString(5, user.getPassword());
+    		statement.setInt(6, user.getAge());
     		
     		statement.executeUpdate();
     		statement.close();

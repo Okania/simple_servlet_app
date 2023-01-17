@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import model.User;
 import dao.UserDao;
 
-@WebServlet("/register")
+//@WebServlet("/register")
 public class UserServlet extends HttpServlet{
 	
 	/**
@@ -19,6 +19,10 @@ public class UserServlet extends HttpServlet{
 	private static final long serialVersionUID = 1L;
 	
 	private UserDao userDao;
+	
+   public void init() {
+	        userDao = new UserDao();
+	    }
 	
 	protected void doPost(HttpServletRequest req,HttpServletResponse res)
 			throws ServletException, IOException{
