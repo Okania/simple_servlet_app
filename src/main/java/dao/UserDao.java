@@ -47,7 +47,7 @@ public class UserDao {
     	try {
     		Class.forName(DRIVER);
     		Connection connection = DriverManager.getConnection(URL,USER,PASSWORD);
-    		PreparedStatement statement = connection.prepareStatement("select * where username = ? and password = ?");
+    		PreparedStatement statement = connection.prepareStatement("select * from users where username = ? and password = ?");
     		statement.setString(1, username);
     		statement.setString(2, pass);
     		
