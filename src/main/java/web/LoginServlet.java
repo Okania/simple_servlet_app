@@ -28,11 +28,11 @@ public class LoginServlet extends HttpServlet{
 		
 		try {
 			if (UserDao.validate(username,password)){
-				RequestDispatcher rs = req.getRequestDispatcher("");
+				RequestDispatcher rs = req.getRequestDispatcher("welcome");
 				rs.forward(req, res);			
 			}else {
 				pw.println("Wrong username or password");
-				RequestDispatcher rs = req.getRequestDispatcher("");
+				RequestDispatcher rs = req.getRequestDispatcher("login.jsp");
 				rs.forward(req, res);
 			}
 		} catch (Exception e) {
