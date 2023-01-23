@@ -36,12 +36,13 @@ public class UserServlet extends HttpServlet{
 		User user = new User(fname,lname,username,password,age);
 		
 		try {
-			userDao.registerUser(user);			
+			userDao.registerUser(user);	
+			res.sendRedirect("confirm.jsp");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		
-		res.sendRedirect("confirm.jsp");
+		
 	
 		
 		
