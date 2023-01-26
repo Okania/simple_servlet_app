@@ -23,45 +23,21 @@ public class User implements Serializable {
 		this.password = password;
 		this.age = age;
 	}
-	
-	
-	public void setFname(String fname) {
-		this.fname = fname;
-	}	
+		
 	public String getFname() {
 		return fname;
-	}
-	
-	
-	public void setLname(String lname) {
-		this.lname = lname;
-	}
+	}	
 	
 	public String getLname() {
 		return lname;
 	}
-	
-	
-	public void setUsername(String username) {
-		this.username = username;
-	}
-	
+
 	public String getUsername() {
 		return username;
 	}
 	
-	
-	public void setPassword(String password) {
-		this.password = password;
-	}
-	
 	public String getPassword() {
 		return password;
-	}
-	
-	
-	public void setAge(int age) {
-		this.age = age;
 	}
 	
 	public int getAge() {
