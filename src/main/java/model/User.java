@@ -42,7 +42,7 @@ public class User implements Serializable {
 	}
 	
 	
-	public void setUsername(String fname) {
+	public void setUsername(String username) {
 		this.username = username;
 	}
 	
@@ -60,7 +60,7 @@ public class User implements Serializable {
 	}
 	
 	
-	public void setAge(String age) {
+	public void setAge(int age) {
 		this.age = age;
 	}
 	
