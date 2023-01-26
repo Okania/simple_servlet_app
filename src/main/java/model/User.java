@@ -34,7 +34,7 @@ public class User implements Serializable {
 	
 	
 	public void setLname(String lname) {
-		this.fname = lname;
+		this.lname = lname;
 	}
 	
 	public String getLname() {
@@ -43,7 +43,7 @@ public class User implements Serializable {
 	
 	
 	public void setUsername(String fname) {
-		this.fname = username;
+		this.username = username;
 	}
 	
 	public String getUsername() {
@@ -52,7 +52,7 @@ public class User implements Serializable {
 	
 	
 	public void setPassword(String password) {
-		this.fname = password;
+		this.password = password;
 	}
 	
 	public String getPassword() {
@@ -61,7 +61,7 @@ public class User implements Serializable {
 	
 	
 	public void setAge(String age) {
-		this.fname = age;
+		this.age = age;
 	}
 	
 	public int getAge() {
